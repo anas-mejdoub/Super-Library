@@ -6,7 +6,7 @@
 /*   By: amejdoub <amejdoub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/20 11:42:38 by amejdoub          #+#    #+#             */
-/*   Updated: 2024/02/21 19:09:04 by amejdoub         ###   ########.fr       */
+/*   Updated: 2024/02/26 17:42:51 by amejdoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static void	formating(va_list args, const char format, int *res)
 	if (format == 's')
 		ft_putstr_fd2(va_arg(args, char *), res);
 	else if (format == 'c')
-		ft_putchar_fd(va_arg(args, int), res);
+		ft_putchar_fd2(va_arg(args, int), res);
 	else if ((format == 'd' || format == 'i'))
 		ft_putnbr_fd2(va_arg(args, int), res);
 	else if (format == 'p')
